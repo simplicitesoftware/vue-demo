@@ -1,18 +1,38 @@
-# vue-demo
+![Simplicit&eacute; Software](https://www.simplicite.io/resources/logos/logo250.png)
+* * *
 
-> Vue demo
+Vue.js&reg; demo
+================
 
-## Build Setup
+This project is a **very basic** web frontend demo using the [Vue.js&reg;](https://vuejs.org) framework.
 
-``` bash
-# install dependencies
-npm install
+Prerequisites:
 
-# serve with hot reload at localhost:8080
-npm run dev
+	sudo npm install -g vue-cli
 
-# build for production with minification
-npm run build
-```
+Install:
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+	npm install
+
+Run in dev mode:
+
+	npm run dev
+
+Build:
+
+	npm run build
+
+License
+=======
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at:
+
+[](http://www.apache.org/licenses/LICENSE-2.0)
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
