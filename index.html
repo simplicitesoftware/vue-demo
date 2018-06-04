@@ -6,8 +6,10 @@
 	</head>
 	<body>
 		<div id="app">
-			<div>Hello {{ login }}!</div>
-			<ul></ul>
+			<div>Hello {{ grant.login }}!</div>
+			<ul id="products">
+				<li v-for="product in products">{{ product.demoPrdName }} </li>
+			</ul>
 		</div>
 		<script src="dist/build.js"></script>
 	</body>

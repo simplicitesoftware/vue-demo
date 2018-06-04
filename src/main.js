@@ -4,7 +4,7 @@ import Simplicite from 'simplicite'
 var vm = new Vue({
 	el: '#app',
 	data: {
-		login: '',
+		grant: {},
 		products: []
 	},
 });
@@ -14,7 +14,7 @@ var app = Simplicite.session({
 	username: 'website',
 	password: 'simplicite',
 	debug: true
-});
+}), prd;
 
 app.login().then(function(params) {
 	return app.getGrant(); // next promise
@@ -23,5 +23,10 @@ app.login().then(function(params) {
 	console.log('Login failed (status: ' + reason.status + ', message: ' + reason.message + ')');
 }).then(function(grant) {
 	if (!app) return;
-	vm.login = grant.getLogin();
+	vm.grant = grant;
+	prd = app.getBusinessObject('DemoProduct');
+	return prd.search(null, { inlineThumbs: true }); // next promise
+}).then(function(list) {
+	if (!app) return;
+	vm.products = list;
 });
