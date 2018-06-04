@@ -31,5 +31,5 @@ app.login().then(function(params) {
 	});
 }, function(reason) {
 	app = null;
-	vm.message = 'Login failed (status: ' + reason.status + ', message: ' + reason.message + ')';
+	vm.message = 'ERROR: Login failed (status: ' + reason.status + ', message: ' + reason.message + ')';
 });

@@ -11,7 +11,7 @@
 <img id="logo" src="logo.svg"/><hr/>
 <div id="app">
 	<div id="message">{{ message }}</div>
-	<div id="grant">Hello {{ grant.login }}!</div>
+	<div id="grant">{{ grant.login && 'Hello ' + grant.login + '!' }}</div>
 	<ul id="products">
 		<li v-for="product in products">{{ product.demoPrdName }} </li>
 	</ul>
