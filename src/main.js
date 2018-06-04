@@ -15,7 +15,7 @@ var vm = new Vue({
 var app = Simplicite.session({
 	url: 'https://demo.dev.simplicite.io',
 	username: 'website',
-	password: 'simplicite',
+	password: 'xsimplicite',
 	debug: debug
 }), prd;
 
@@ -30,6 +30,6 @@ app.login().then(function(params) {
 		if (debug) console.log(list);
 		vm.products = list;
 	});
-}, function(reason) {
+}).fail(function(reason) {
 	vm.message = 'ERROR: Login failed (status: ' + reason.status + ', message: ' + reason.message + ')';
 });
