@@ -20,18 +20,16 @@ var app = Simplicite.session({
 }), prd;
 
 app.login().then(function(params) {
-	return app.getGrant(); // next promise
+	return app.getGrant().then(function(grant) {
+		if (debug) console.log(grant);
+		vm.grant = grant;
+		prd = app.getBusinessObject('DemoProduct');
+		return prd.search();
+	}).then(function(list) {
+		if (debug) console.log(list);
+		vm.products = list;
+	});
 }, function(reason) {
 	app = null;
 	vm.message = 'Login failed (status: ' + reason.status + ', message: ' + reason.message + ')';
-}).then(function(grant) {
-	if (!app) return;
-	if (debug) console.log(grant);
-	vm.grant = grant;
-	prd = app.getBusinessObject('DemoProduct');
-	return prd.search(); // next promise
-}).then(function(list) {
-	if (!app) return;
-	if (debug) console.log(list);
-	vm.products = list;
 });
