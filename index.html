@@ -6,7 +6,8 @@
 	</head>
 	<body>
 		<div id="app">
-			<div>Hello {{ grant.login }}!</div>
+			<div id="message">{{ message }}</div>
+			<div id="grant">Hello {{ grant.login }}!</div>
 			<ul id="products">
 				<li v-for="product in products">{{ product.demoPrdName }} </li>
 			</ul>
