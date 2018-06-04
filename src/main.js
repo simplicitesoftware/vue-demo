@@ -30,6 +30,5 @@ app.login().then(function(params) {
 		vm.products = list;
 	});
 }, function(reason) {
-	app = null;
 	vm.message = 'ERROR: Login failed (status: ' + reason.status + ', message: ' + reason.message + ')';
 });
