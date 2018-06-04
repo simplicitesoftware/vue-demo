@@ -3,8 +3,12 @@
 <head>
 <meta charset="utf-8">
 <title>Vue&reg; demo</title>
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" type="text/css" href="index.css">
+<script async defer src="dist/build.js"></script>
 </head>
 <body>
+<img id="logo" src="logo.svg"/><hr/>
 <div id="app">
 	<div id="message">{{ message }}</div>
 	<div id="grant">Hello {{ grant.login }}!</div>
@@ -12,6 +16,5 @@
 		<li v-for="product in products">{{ product.demoPrdName }} </li>
 	</ul>
 </div>
-<script src="dist/build.js"></script>
 </body>
 </html>
