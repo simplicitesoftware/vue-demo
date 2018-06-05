@@ -22,7 +22,7 @@ var vm = new Vue({
 var app = Simplicite.session({
 	url: 'https://demo.dev.simplicite.io',
 	username: 'website',
-	password: 'xsimplicite',
+	password: 'simplicite',
 	debug: debug
 }), prd;
 
