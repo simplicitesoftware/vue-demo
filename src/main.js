@@ -32,7 +32,7 @@ app.login().then(function(params) {
 		if (debug) console.log(grant);
 		vm.grant = grant;
 		prd = app.getBusinessObject('DemoProduct');
-		return prd.search();
+		return prd.search(null, { inlineThumbs: true });
 	}).then(function(list) {
 		if (debug) console.log(list);
 		vm.products = list;

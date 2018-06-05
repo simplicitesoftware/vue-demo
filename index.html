@@ -12,9 +12,20 @@
 <div id="app">
 	<div id="message">{{ message }}</div>
 	<div id="grant">{{ grant.login && 'Hello ' + grant.login + '!' }}</div>
-	<ul id="products">
-		<li v-for="product in products">{{ product.demoPrdName }} </li>
-	</ul>
+	<div id="products">
+		<table>
+			<tbody>
+				<tr v-for="product in products">
+					<td><img :src="'data:image/png;base64,' + product.demoPrdPicture.thumbnail"/></td>
+					<td>
+						<div class="name">{{ product.demoPrdName }}</div>
+						<div class="reference">{{ product.demoPrdReference }}</div>
+						<div class="description">{{ product.demoPrdDescription }}</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
 </div>
 <hr/><div>&copy; Simplicit&eacute; Software, powered by <a href="https://vuejs.org" target="_blank">Vue.js</a>
 </body>
