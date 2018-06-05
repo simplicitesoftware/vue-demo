@@ -10,9 +10,9 @@
 <body>
 <img id="logo" src="logo.svg"/><hr/>
 <div id="app">
-	<div id="message">{{ message }}</div>
-	<div id="grant">{{ grant.login && 'Hello ' + grant.login + '!' }}</div>
-	<div id="products">
+	<div v-if="error" id="error">Error: {{ error }}</div>
+	<div v-if="grant.login" id="grant">Hello {{ grant.login }}!</div>
+	<div v-if="products.length > 0" id="products">
 		<table>
 			<tbody>
 				<tr v-for="product in products">

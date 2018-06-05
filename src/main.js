@@ -13,7 +13,7 @@ var debug = false;
 var vm = new Vue({
 	el: '#app',
 	data: {
-		message: '',
+		error: '',
 		grant: {},
 		products: []
 	},
@@ -38,5 +38,5 @@ app.login().then(function(params) {
 		vm.products = list;
 	});
 }).fail(function(reason) {
-	vm.message = 'ERROR: Login failed (status: ' + reason.status + ', message: ' + reason.message + ')';
+	vm.error = 'Login failed (status: ' + reason.status + ', message: ' + reason.message + ')';
 });
