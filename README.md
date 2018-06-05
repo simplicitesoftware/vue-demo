@@ -18,7 +18,7 @@ Install:
 
 Run in dev mode:
 
-	npm run dev
+	npm start
 
 Build:
 

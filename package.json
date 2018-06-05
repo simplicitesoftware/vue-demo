@@ -6,7 +6,7 @@
   "license": "Apache-2.0",
   "private": true,
   "scripts": {
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --port 3000 --allowed-hosts .simplicite.io --open --hot",
+    "start": "cross-env NODE_ENV=development webpack-dev-server --port 3000 --allowed-hosts .simplicite.io --open --hot",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
     "serve": "serve -l 3000 ."
   },
