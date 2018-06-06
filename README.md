@@ -10,23 +10,33 @@ and the [Vue.js&reg;](https://vuejs.org) framework.
 
 Prerequisites:
 
-	sudo npm install -g vue-cli serve
+```bash
+sudo npm install -g vue-cli serve
+```
 
 Install:
 
-	npm install
+```bash
+npm install
+```
 
 Run in dev mode:
 
-	npm start
+```bash
+npm start
+```
 
 Build:
 
-	npm run build
+```bash
+npm run build
+```
 
 Serve:
 
-	npm run serve
+```bash
+npm run serve
+```
 
 License
 =======
