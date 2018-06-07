@@ -28,14 +28,14 @@ var app = Simplicite.session({
 
 app.login().then(function(params) {
 	if (debug) console.log('Logged in as ' + params.username);
-	return app.getGrant().then(function(grant) {
+	app.getGrant().then(function(grant) {
 		if (debug) console.log(grant);
 		vm.grant = grant;
 		prd = app.getBusinessObject('DemoProduct');
-		return prd.search(null, { inlineThumbs: true });
-	}).then(function(list) {
-		if (debug) console.log(list);
-		vm.products = list;
+		prd.search(null, { inlineThumbs: true }).then(function(list) {
+			if (debug) console.log(list);
+			vm.products = list;
+		})
 	});
 }).fail(function(reason) {
 	vm.error = 'Login failed (status: ' + reason.status + ', message: ' + reason.message + ')';
