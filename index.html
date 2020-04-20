@@ -8,7 +8,7 @@
 <script async defer src="dist/build.js"></script>
 </head>
 <body>
-<img id="logo" src="logo.svg"/><hr/>
+<img id="logo" alt="Logo" src="logo.svg"/><hr/>
 <div id="app">
 	<div v-if="error" class="error">Error: {{ error }}</div>
 	<div v-if="grant.login">Hello {{ grant.login }}!</div>
@@ -16,7 +16,9 @@
 		<table>
 			<tbody>
 				<tr v-for="product in products">
-					<td><img :src="'data:image/png;base64,' + product.demoPrdPicture.thumbnail"/></td>
+					<td>
+						<img alt="Picture" :src="'data:image/png;base64,' + product.demoPrdPicture.thumbnail"/>
+					</td>
 					<td>
 						<div class="name">{{ product.demoPrdName }}</div>
 						<div class="reference">{{ product.demoPrdReference }}</div>
@@ -27,6 +29,7 @@
 		</table>
 	</div>
 </div>
-<hr/><div>&copy; Simplicit&eacute; Software, powered by <a href="https://vuejs.org" target="_blank">Vue.js</a>
+<hr/>
+<div>&copy; Simplicit&eacute; Software, powered by <a href="https://vuejs.org" target="_blank">Vue.js</a></div>
 </body>
 </html>
