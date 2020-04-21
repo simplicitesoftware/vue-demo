@@ -16,4 +16,4 @@ Vue.config.productionTip = false
 
 new Vue({
   render: h => h(App),
-}).$mount('#demo-vue-frontend')
+}).$mount('#vue-demo')
