@@ -26,5 +26,8 @@
   </head>
   <body style="background-color: #FCFCFC; overscroll-behavior: none;">
     <div id="vue-demo"></div>
+    <script type="text/javascript">
+    window.addEventListener('beforeinstallprompt', (e) => { e.preventDefault(); deferredPrompt = e; showInstallPromotion(); });
+    </script>
   </body>
 </html>
