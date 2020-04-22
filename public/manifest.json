@@ -1,8 +1,8 @@
 {
   "background_color": "#FFFFFF",
   "display": "fullscreen",
-  "name": "Demo Vue frontend",
-  "short_name": "Demo Vue frontend",
+  "name": "Vue demo",
+  "short_name": "Vue demo",
   "description": "Demo frontend using the Vue framework",
   "start_url": ".",
   "related_applications": [{ "platform": "web", "url": "" }],
