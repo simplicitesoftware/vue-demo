@@ -37,6 +37,7 @@ ul {
   padding-inline-end: 0;
 }
 li {
+  background-color: #FFFFFF;
   display: inline-block;
   vertical-align: top;
   border: solid 1px #eee;
