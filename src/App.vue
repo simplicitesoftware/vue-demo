@@ -20,4 +20,10 @@ export default {
   font-family: Helvetica, Arial, sans-serif;
   text-align: center;
 }
+@media screen and (min-width: 1024px) {
+  #vue-demo {
+    width: 1024px;
+    margin: 0 auto;
+  }
+}
 </style>
