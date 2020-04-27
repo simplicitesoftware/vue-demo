@@ -1,6 +1,6 @@
-import Vue from 'vue'
-import Simplicite from 'simplicite'
-import App from './App.vue'
+import Vue from 'vue';
+import Simplicite from 'simplicite';
+import App from './App.vue';
 
 const s = Simplicite.session({
   url: 'https://dev40.dev.simplicite.io',
@@ -11,6 +11,9 @@ const s = Simplicite.session({
 
 // Make the above variable available to all components
 Vue.prototype.$simplicite = s;
+
+import {version} from '../package.json';
+Vue.prototype.$version = version;
 
 Vue.config.productionTip = false
 
