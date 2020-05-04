@@ -1,18 +1,18 @@
 import Vue from 'vue';
 import Simplicite from 'simplicite';
 import App from './App.vue';
+import {version} from '../package.json';
 
 const s = Simplicite.session({
-  url: 'https://dev40.dev.simplicite.io',
-  username: 'website',
-  password: 'simplicite',
+  url: process.env.VUE_APP_URL,
+  username: process.env.VUE_APP_USERNAME,
+  password: process.env.VUE_APP_PASSWORD,
   debug: false,
 });
 
 // Make the above variable available to all components
 Vue.prototype.$simplicite = s;
-
-import {version} from '../package.json';
+// Store version
 Vue.prototype.$version = version;
 
 Vue.config.productionTip = false

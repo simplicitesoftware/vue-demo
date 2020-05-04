@@ -2,7 +2,9 @@
   <div id="vue-demo">
     <img alt="Logo" src="./assets/logo.svg">
     <Catalog/>
-    <div>&copy; Simplicit&eacute; Software, powered by <a href="https://vuejs.org" target="_blank">Vue.js</a> (version {{ $version }})</div>
+    <div>&copy; Simplicit&eacute; Software,
+    powered by <a href="https://vuejs.org" rel="noopener noreferrer" target="_blank">Vue.js</a>
+    (version {{ $version }})</div>
   </div>
 </template>
 
