@@ -1,3 +1,10 @@
+/*  ___ _            _ _    _ _
+ * / __(_)_ __  _ __| (_)__(_) |_ ___
+ * \__ \ | '  \| '_ \ | / _| |  _/ -_)
+ * |___/_|_|_|_| .__/_|_\__|_|\__\___|
+ *             |_|
+ * This example is using the Simplicite node.js & browser JavaScript API
+ */
 import Vue from 'vue';
 import Simplicite from 'simplicite';
 import App from './App.vue';
