@@ -27,9 +27,20 @@ export default {
 </script>
 
 <style scoped>
-h1 { color: #222; font-size: 1.5em; }
-h2 { color: #25911e; font-size: 1.25em; font-style: italic; }
-p { color: #777; }
+img {
+  max-width: 75%;
+}
+h1 {
+  color: #222;
+  font-size: 1.5em;
+}
+h2 {
+  color: #25911e;
+  font-size: 1.25em; font-style: italic;
+}
+p {
+  color: #777;
+}
 ul {
   list-style-type: none;
   margin: 0;
@@ -45,11 +56,9 @@ li {
   box-shadow: 5px 5px 10px #ddd;
   margin: 10px;
   padding: 10px;
+  min-width: 200px;
   max-width: 250px;
   height: 350px;
   overflow: auto;
-}
-li img {
-  max-width: 150px;
 }
 </style>
