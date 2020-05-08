@@ -10,6 +10,7 @@ import Simplicite from 'simplicite';
 import App from './App.vue';
 import {version} from '../package.json';
 
+// Simplicite session (see the '.env' files for environment variables values)
 const s = Simplicite.session({
   url: process.env.VUE_APP_URL,
   username: process.env.VUE_APP_USERNAME,
@@ -17,11 +18,13 @@ const s = Simplicite.session({
   debug: false,
 });
 
-// Make the above variable available to all components
+// Make the above session available to all components
 Vue.prototype.$simplicite = s;
-// Store version
+
+// Make the version available to all components
 Vue.prototype.$version = version;
 
+// Disable Vue warning when running in developement mode
 Vue.config.productionTip = false
 
 new Vue({

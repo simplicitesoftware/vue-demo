@@ -19,9 +19,13 @@ export default {
     return { products: [] };
   },
   created() {
-    var vm = this;
-    var prd = this.$simplicite.getBusinessObject('DemoProduct');
-    prd.search({ demoPrdAvailable: true }, { inlineDocuments: [ 'demoPrdPicture' ] }).then(list => { vm.products = list; });
+    let vm = this;
+    vm.$simplicite.getBusinessObject('DemoProduct').search(
+      { demoPrdAvailable: true }, // Filters
+      { inlineDocuments: [ 'demoPrdPicture' ] // Options
+    }).then(list => {
+      vm.products = list;
+    });
   }
 }
 </script>
