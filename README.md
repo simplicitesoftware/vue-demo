@@ -21,7 +21,7 @@ Run in developement mode
 ------------------------
 
 ```bash
-npm run serve
+npm run start
 ```
 
 Build for production
@@ -29,6 +29,13 @@ Build for production
 
 ```bash
 npm run build
+```
+
+Run in production mode
+----------------------
+
+```bash
+npm run serve
 ```
 
 License

@@ -3,10 +3,10 @@
   "version": "1.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "start": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "loadsite": "/var/simplicite/utils/tools/loadsite.sh dev40 DemoVueJSStaticFrontend DemoVueJS"
+    "serve": "serve -l 3000 dist"
   },
   "dependencies": {
     "core-js": "^3.6.4",
@@ -21,7 +21,8 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.11",
+    "serve": "latest"
   },
   "eslintConfig": {
     "root": true,
