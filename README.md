@@ -10,25 +10,22 @@ This project is a **very basic** web frontend demo using
 the [Simplicit&eacute;&reg; node.js &amp; browser JavaScript library](https://github.com/simplicitesoftware/nodejs-api)
 and the [Vue.js&reg;](https://vuejs.org) framework.
 
-## Prerequisites:
-
-```bash
-sudo npm install -g @vue/cli
-```
-
-## Project setup
+Install
+-------
 
 ```bash
 npm install
 ```
 
-### Compiles and hot-reloads for development
+Run in developement mode
+------------------------
 
 ```bash
 npm run serve
 ```
 
-### Compiles and minifies for production
+Build for production
+--------------------
 
 ```bash
 npm run build
