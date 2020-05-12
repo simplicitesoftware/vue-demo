@@ -1,6 +1,6 @@
 {
   "name": "vue-demo",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "private": true,
   "scripts": {
     "start": "vue-cli-service --port=3000 serve",
@@ -9,11 +9,12 @@
     "serve": "serve -l 3000 dist"
   },
   "dependencies": {
-    "core-js": "^3.6.4",
+    "core-js": "^3.6.5",
     "vue": "^2.6.11",
-    "simplicite": "^1.1.4"
+    "simplicite": "latest"
   },
   "devDependencies": {
+    "vue-template-compiler": "^2.6.11",
     "@vue/cli": "~4.3.1",
     "@vue/cli-plugin-babel": "~4.3.1",
     "@vue/cli-plugin-eslint": "~4.3.1",
@@ -21,7 +22,6 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
-    "vue-template-compiler": "^2.6.11",
     "serve": "latest"
   },
   "eslintConfig": {
