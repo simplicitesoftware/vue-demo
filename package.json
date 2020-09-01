@@ -1,6 +1,6 @@
 {
   "name": "vue-demo",
-  "version": "1.1.12",
+  "version": "1.1.13",
   "private": true,
   "scripts": {
     "start": "vue-cli-service --host=0.0.0.0 --port=3000 serve",
