@@ -9,18 +9,18 @@
     "serve": "serve -l 3000 dist"
   },
   "dependencies": {
-    "core-js": "^3.8.1",
+    "core-js": "^3.8.3",
     "simplicite": "latest",
     "vue": "^2.6.12"
   },
   "devDependencies": {
-    "@vue/cli": "~4.3.1",
-    "@vue/cli-plugin-babel": "~4.3.1",
-    "@vue/cli-plugin-eslint": "~4.3.1",
-    "@vue/cli-service": "~4.3.1",
+    "@vue/cli": "~4.5.11",
+    "@vue/cli-plugin-babel": "~4.5.11",
+    "@vue/cli-plugin-eslint": "~4.5.11",
+    "@vue/cli-service": "~4.5.11",
     "babel-eslint": "^10.1.0",
-    "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^6.2.2",
+    "eslint": "^7.19.0",
+    "eslint-plugin-vue": "^7.5.0",
     "serve": "latest",
     "vue-template-compiler": "^2.6.12"
   },
