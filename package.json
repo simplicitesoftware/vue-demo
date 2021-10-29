@@ -1,6 +1,6 @@
 {
   "name": "vue-demo",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "private": true,
   "scripts": {
     "start": "vue-cli-service --host=0.0.0.0 --port=3000 serve",
@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "core-js": "^3.19.0",
-    "simplicite": "^2.0.1",
+    "simplicite": "^2.1.0",
     "vue": "^2.6.14"
   },
   "devDependencies": {
