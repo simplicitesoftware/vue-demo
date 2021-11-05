@@ -6,12 +6,12 @@
  * This example is using the Simplicite node.js & browser JavaScript API
  */
 import Vue from 'vue';
-import Simplicite from 'simplicite';
 import App from './App.vue';
+import simplicite from 'simplicite';
 import {version} from '../package.json';
 
 // Simplicite session (see the '.env' files for environment variables values)
-const s = Simplicite.session({
+const s = simplicite.session({
   url: process.env.VUE_APP_URL,
   username: process.env.VUE_APP_USERNAME,
   password: process.env.VUE_APP_PASSWORD,
