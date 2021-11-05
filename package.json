@@ -1,6 +1,6 @@
 {
   "name": "vue-demo",
-  "version": "2.2.0",
+  "version": "2.2.4",
   "private": true,
   "scripts": {
     "start": "vue-cli-service --host=0.0.0.0 --port=3000 serve",
@@ -10,8 +10,8 @@
     "ncu": "ncu"
   },
   "dependencies": {
-    "core-js": "^3.19.0",
-    "simplicite": "^2.2.0",
+    "core-js": "^3.19.1",
+    "simplicite": "^2.2.4",
     "vue": "^2.6.14"
   },
   "devDependencies": {
@@ -22,8 +22,8 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^7.20.0",
-    "npm-check-updates": "^11.8.5",
-    "serve": "^12.0.1",
+    "npm-check-updates": "^12.0.0",
+    "serve": "^13.0.2",
     "vue-template-compiler": "^2.6.14"
   },
   "eslintConfig": {
