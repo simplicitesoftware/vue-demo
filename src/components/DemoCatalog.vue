@@ -14,7 +14,7 @@
 
 <script>
 export default {
-  name: 'Catalog',
+  name: 'DemoCatalog',
   data() {
     return { products: [] };
   },
