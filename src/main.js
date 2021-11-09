@@ -8,21 +8,20 @@
 import Vue from 'vue';
 import App from './App.vue';
 import simplicite from 'simplicite';
-import {version} from '../package.json';
 
 // Simplicite session (see the '.env' files for environment variables values)
-const s = simplicite.session({
+const app = simplicite.session({
   url: process.env.VUE_APP_URL,
   username: process.env.VUE_APP_USERNAME,
   password: process.env.VUE_APP_PASSWORD,
   debug: false,
 });
 
-// Make the above session available to all components
-Vue.prototype.$simplicite = s;
+app.info('Version: ' + simplicite.constants.MODULE_VERSION);
+app.debug(app.parameters);
 
-// Make the version available to all components
-Vue.prototype.$version = version;
+// Make the above session available to all components
+Vue.prototype.$simplicite = app;
 
 // Disable Vue warning when running in developement mode
 Vue.config.productionTip = false
