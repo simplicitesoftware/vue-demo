@@ -17,6 +17,8 @@ Install
 npm install
 ```
 
+**Note**: If you get errors try with `--legacy-peer-deps`
+
 Run in developement mode
 ------------------------
 
