@@ -17,8 +17,12 @@ Install
 npm install
 ```
 
-**Note**: If you get errors try with `--legacy-peer-deps`
+Check syntax and rules
+----------------------
 
+```bash
+npm run lint
+```
 Run in developement mode
 ------------------------
 
