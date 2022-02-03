@@ -23,6 +23,7 @@ Check syntax and rules
 ```bash
 npm run lint
 ```
+
 Run in developement mode
 ------------------------
 
