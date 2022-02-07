@@ -5,7 +5,7 @@
  *             |_|
  * This example is using the Simplicite node.js & browser JavaScript API
  */
-import Vue from 'vue';
+import { createApp } from 'vue';
 import App from './App.vue';
 import simplicite from 'simplicite';
 
@@ -20,12 +20,9 @@ const app = simplicite.session({
 app.info('Version: ' + simplicite.constants.MODULE_VERSION);
 app.debug(app.parameters);
 
+const vueApp = createApp(App);
+
 // Make the above session available to all components
-Vue.prototype.$simplicite = app;
+vueApp.config.globalProperties.$simplicite = app;
 
-// Disable Vue warning when running in developement mode
-Vue.config.productionTip = false
-
-new Vue({
-  render: h => h(App),
-}).$mount('#vue-demo')
+vueApp.mount('#vue-demo');
