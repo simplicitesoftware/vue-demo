@@ -3,6 +3,6 @@
         { "name": "./dist", "root": true }
     ],
     "options": {
-        "output": "dist.zip"
+        "output": "site.zip"
     }
 }
