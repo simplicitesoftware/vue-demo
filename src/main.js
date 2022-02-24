@@ -10,19 +10,18 @@ import App from './App.vue';
 import simplicite from 'simplicite';
 
 // Simplicite session (see the '.env' files for environment variables values)
-const app = simplicite.session({
-  url: process.env.VUE_APP_URL,
-  username: process.env.VUE_APP_USERNAME,
-  password: process.env.VUE_APP_PASSWORD,
-  debug: false,
-});
+const app = simplicite.session({ url: 'https://demo.dev.simplicite.io', debug: false });
 
 app.info('Version: ' + simplicite.constants.MODULE_VERSION);
 app.debug(app.parameters);
 
-const vueApp = createApp(App);
+app.login({ username: 'website', password: 'simplicite' }).then(user => {
+    app.debug('Logged in as ' + user.login);
 
-// Make the above session available to all components
-vueApp.config.globalProperties.$simplicite = app;
+    const vueApp = createApp(App);
 
-vueApp.mount('#vue-demo');
+    // Make the above session available to all components
+    vueApp.config.globalProperties.$simplicite = app;
+
+    vueApp.mount('#vue-demo');
+})
