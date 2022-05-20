@@ -1,5 +1,5 @@
 <template>
-  <div class="catalog">
+  <div>
     <p v-if="products.length == 0">Loading product catalog...</p>
     <ul v-else>
       <li v-for="product in products" v-bind:key="product.row_id">
@@ -19,7 +19,7 @@ export default {
     return { products: [] };
   },
   created() {
-    let vm = this;
+    const vm = this;
     vm.$simplicite.getBusinessObject('DemoProduct').search(
       { demoPrdAvailable: true }, // Filters
       { inlineDocuments: [ 'demoPrdPicture' ] // Options

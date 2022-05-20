@@ -1,18 +1,19 @@
 <template>
   <div id="vue-demo">
-    <img alt="Logo" src="./assets/logo.svg">
+    <DemoHeader/>
     <DemoCatalog/>
-    <div>&copy; Simplicit&eacute; Software (version {{ $simplicite.constants.MODULE_VERSION }}),
-    powered by <a href="https://vuejs.org" rel="noopener noreferrer" target="_blank">Vue.js</a></div>
+    <DemoFooter/>
   </div>
 </template>
 
 <script>
+import DemoHeader from './components/DemoHeader.vue'
 import DemoCatalog from './components/DemoCatalog.vue'
+import DemoFooter from './components/DemoFooter.vue'
 
 export default {
   name: 'App',
-  components: { DemoCatalog }
+  components: { DemoHeader, DemoCatalog, DemoFooter }
 }
 </script>
 

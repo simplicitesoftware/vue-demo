@@ -6,11 +6,12 @@
  * This example is using the Simplicite node.js & browser JavaScript API
  */
 import { createApp } from 'vue';
-import App from './App.vue';
+import Demo from './Demo.vue';
 import simplicite from 'simplicite';
 
-// Explicit URL needed for a standalone deployment, remove it when deploying in Simplicité
-const app = simplicite.session({ url: 'https://demo.dev.simplicite.io', debug: false });
+// Explicit URL needed for a standalone deployment, set it to undefined when deploying in Simplicité
+const cfg = { /*url: 'https://demo.dev.simplicite.io',*/ debug: false };
+const app = simplicite.session(cfg);
 
 app.info('Version: ' + simplicite.constants.MODULE_VERSION);
 app.debug(app.parameters);
@@ -18,10 +19,11 @@ app.debug(app.parameters);
 app.login({ username: 'website', password: 'simplicite' }).then(user => {
     app.debug('Logged in as ' + user.login);
 
-    const vueApp = createApp(App);
+    const vueApp = createApp(Demo);
 
-    // Make the above session available to all components
+    // Make the configuration and session variable available to all components
+    vueApp.config.globalProperties.$configuration = cfg;
     vueApp.config.globalProperties.$simplicite = app;
 
-    vueApp.mount('#vue-demo');
+    vueApp.mount('body');
 })
