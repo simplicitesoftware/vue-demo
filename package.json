@@ -1,7 +1,7 @@
 {
   "name": "vue-demo",
   "description": "Vue demo",
-  "version": "2.2.22",
+  "version": "2.2.23",
   "author": "Simplicite Software <contact@simplicitesoftware.com> (http://www.simplicitesoftware.com/)",
   "license": "Apache-2.0",
   "repository": {
@@ -9,9 +9,9 @@
     "url": "https://github.com/simplicitesoftware/vue-demo.git"
   },
   "dependencies": {
-    "core-js": "^3.21.1",
-    "vue": "^3.2.31",
-    "simplicite": "^2.2.22"
+    "core-js": "^3.22.5",
+    "vue": "^3.2.34",
+    "simplicite": "^2.2.23"
   },
   "devDependencies": {
     "@vue/cli": "^5.0.4",
@@ -20,18 +20,18 @@
     "@vue/cli-service": "^5.0.4",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.32.0",
-    "eslint-plugin-vue": "^8.5.0",
-    "npm-check-updates": "^12.5.4",
+    "eslint-plugin-vue": "^9.0.1",
+    "npm-check-updates": "^13.0.1",
     "serve": "^13.0.2",
     "vue-template-compiler": "^2.6.14",
-    "jszip-cli": "^1.4.24"
+    "@ffflorian/jszip-cli": "^3.1.6"
   },
   "scripts": {
     "start": "vue-cli-service --host=0.0.0.0 --port=3000 serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "serve": "serve -l 3000 dist",
-    "zip": "jszip -c jszip.config.json",
+    "zip": "rm -f site.zip && cd dist && jszip-cli add --ignore *.LICENSE.txt --output ../site.zip .",
     "ncu": "ncu"
   },
   "eslintConfig": {
