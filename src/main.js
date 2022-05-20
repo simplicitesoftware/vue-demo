@@ -9,7 +9,7 @@ import { createApp } from 'vue';
 import App from './App.vue';
 import simplicite from 'simplicite';
 
-// Simplicite session (see the '.env' files for environment variables values)
+// Explicit URL needed for a standalone deployment, remove it when deploying in Simplicité
 const app = simplicite.session({ url: 'https://demo.dev.simplicite.io', debug: false });
 
 app.info('Version: ' + simplicite.constants.MODULE_VERSION);
