@@ -1,19 +1,21 @@
 <template>
   <div id="vue-demo">
     <DemoHeader/>
-    <DemoCatalog/>
+    <DemoProducts/>
+    <!-- DemoAddProduct/ -->
     <DemoFooter/>
   </div>
 </template>
 
 <script>
 import DemoHeader from './components/DemoHeader.vue'
-import DemoCatalog from './components/DemoCatalog.vue'
+import DemoProducts from './components/DemoProducts.vue'
+//import DemoAddProduct from './components/DemoAddProduct.vue'
 import DemoFooter from './components/DemoFooter.vue'
 
 export default {
   name: 'App',
-  components: { DemoHeader, DemoCatalog, DemoFooter }
+  components: { DemoHeader, DemoProducts, /*DemoAddProduct, */DemoFooter }
 }
 </script>
 
