@@ -3,7 +3,7 @@
     <p v-if="products.length == 0">Loading product catalog...</p>
     <ul v-else>
       <li v-for="product in products" v-bind:key="product.row_id">
-        <img :alt="product.demoPrdReference" :src="'data:' + product.demoPrdPicture.mime + ';base64,' + product.demoPrdPicture.content"/>
+        <img v-if="product.demoPrdPicture" :alt="product.demoPrdReference" :src="'data:' + product.demoPrdPicture.mime + ';base64,' + product.demoPrdPicture.content"/>
         <h1>{{ product.demoPrdName }}</h1>
         <h2>{{ product.demoPrdReference }}</h2>
         <p>{{ product.demoPrdDescription }}</p>
