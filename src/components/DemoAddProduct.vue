@@ -1,8 +1,8 @@
 <template>
   <div>
-    <input type="text" v-model="ref" placeholder="REFxxx"/>
-    <input type="text" v-model="name" placeholder="Product name"/>
-    <button v-on:click="add">Add product</button>
+    <input v-model="ref" type="text" placeholder="REFxxx">
+    <input v-model="name" type="text" placeholder="Product name">
+    <button @click="add">Add product</button>
   </div>
 </template>
 
@@ -12,20 +12,20 @@ export default {
   methods: {
     async add() {
       const vm = this;
-      console.log(vm.ref, vm.name);
+      // console.log(vm.ref, vm.name);
       const prd = vm.$simplicite.getBusinessObject('DemoProduct');
       let item = await prd.getForCreate();
-      console.log(item);
+      // console.log(item);
       item.demoPrdSupId = 1;
       item.demoPrdType = 'OTHER';
       item.demoPrdReference = vm.ref;
       item.demoPrdName = vm.name;
-      console.log(prd.item);
+      // console.log(prd.item);
       item = await prd.save(item);
-      console.log(item);
+      // console.log(item);
     }
   }
-}
+};
 </script>
 
 <style scoped>

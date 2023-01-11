@@ -8,15 +8,15 @@
 </template>
 
 <script>
-import DemoHeader from './components/DemoHeader.vue'
-import DemoProducts from './components/DemoProducts.vue'
+import DemoHeader from './components/DemoHeader.vue';
+import DemoProducts from './components/DemoProducts.vue';
 //import DemoAddProduct from './components/DemoAddProduct.vue'
-import DemoFooter from './components/DemoFooter.vue'
+import DemoFooter from './components/DemoFooter.vue';
 
 export default {
   name: 'App',
   components: { DemoHeader, DemoProducts, /*DemoAddProduct, */DemoFooter }
-}
+};
 </script>
 
 <style>

@@ -17,13 +17,13 @@ app.info('Version: ' + simplicite.constants.MODULE_VERSION);
 app.debug(app.parameters);
 
 app.login({ username: 'website', password: 'simplicite' }).then(user => {
-    app.debug('Logged in as ' + user.login);
+  app.debug('Logged in as ' + user.login);
 
-    const vueApp = createApp(Demo);
+  const vueApp = createApp(Demo);
 
-    // Make the configuration and session variable available to all components
-    vueApp.config.globalProperties.$configuration = cfg;
-    vueApp.config.globalProperties.$simplicite = app;
+  // Make the configuration and session variable available to all components
+  vueApp.config.globalProperties.$configuration = cfg;
+  vueApp.config.globalProperties.$simplicite = app;
 
-    vueApp.mount('body');
-})
+  vueApp.mount('body');
+});

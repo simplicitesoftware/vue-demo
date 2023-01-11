@@ -10,9 +10,9 @@ export default {
   data () {
     return {
       configuration: this.$configuration
-    }
+    };
   }
-}
+};
 </script>
 
 <style scoped>
