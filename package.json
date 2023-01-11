@@ -25,6 +25,9 @@
     "npm-check": "^6.0.1",
     "npm-check-updates": "^16.6.2",
     "serve": "^14.1.2",
+    "stylelint": "^14.16.1",
+    "stylelint-config-standard": "^29.0.0",
+    "postcss-less": "^6.0.0",
     "vue-template-compiler": "^2.7.14"
   },
   "scripts": {
@@ -35,32 +38,6 @@
     "zip": "rm -f SITE.zip && cd dist && jszip-cli add --ignore *.LICENSE.txt --output ../SITE.zip .",
     "check": "npm-check --skip-unused",
     "ncu": "ncu"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "eslint:recommended",
-      "plugin:vue/vue3-recommended"
-    ],
-    "rules": {
-      "no-console": "error",
-      "no-debugger": "error",
-      "semi": ["error", "always"],
-      "quotes": ["error", "single"],
-      "no-multiple-empty-lines": ["error", { "max": 1 }],
-      "indent": ["error", 2],
-      "vue/html-indent": ["error", 2],
-      "vue/max-attributes-per-line": "off",
-      "vue/first-attribute-linebreak": "off",
-      "vue/html-closing-bracket-spacing": "off",
-      "vue/singleline-html-element-content-newline": "off"
-    },
-    "ignorePatterns": [
-      "dist"
-    ]
   },
   "browserslist": [
     "> 1%",
