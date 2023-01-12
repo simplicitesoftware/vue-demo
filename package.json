@@ -35,7 +35,7 @@
     "start": "vue-cli-service --host=0.0.0.0 --port=3000 serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "stylelint": "stylelint src/**.vue",
+    "stylelint": "stylelint src/**/*.vue",
     "serve": "serve -l 3000 dist",
     "zip": "rm -f SITE.zip && cd dist && jszip-cli add --ignore *.LICENSE.txt --output ../SITE.zip .",
     "check": "npm-check --skip-unused",
