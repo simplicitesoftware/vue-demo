@@ -9,7 +9,7 @@
     "url": "https://github.com/simplicitesoftware/vue-demo.git"
   },
   "dependencies": {
-    "core-js": "^3.32.2",
+    "core-js": "^3.33.0",
     "simplicite": "^2.2.34",
     "vue": "^3.3.4"
   },
@@ -20,7 +20,7 @@
     "@vue/cli-plugin-eslint": "^5.0.8",
     "@vue/cli-service": "^5.0.8",
     "babel-eslint": "^10.1.0",
-    "eslint": "^8.49.0",
+    "eslint": "^8.50.0",
     "eslint-plugin-vue": "^9.17.0",
     "npm-check-updates": "^16.14.4",
     "postcss-less": "^6.0.0",
