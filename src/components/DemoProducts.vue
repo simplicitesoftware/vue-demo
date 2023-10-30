@@ -18,14 +18,12 @@ export default {
   data() {
     return { products: [] };
   },
-  created() {
+  async created() {
     const vm = this;
-    vm.$simplicite.getBusinessObject('DemoProduct').search(
+    vm.products = await vm.$simplicite.getBusinessObject('DemoProduct').search(
       { demoPrdAvailable: true }, // Filters
-      { inlineDocuments: [ 'demoPrdPicture' ] // Options
-      }).then(list => {
-      vm.products = list;
-    });
+      { inlineDocuments: [ 'demoPrdPicture' ] }// Options
+    );
   }
 };
 </script>

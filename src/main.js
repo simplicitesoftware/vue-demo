@@ -9,14 +9,15 @@ import { createApp } from 'vue';
 import Demo from './Demo.vue';
 import simplicite from 'simplicite';
 
-// Explicit URL needed for a standalone deployment, set it to undefined when deploying in Simplicité
-const cfg = { url: 'https://demo.dev.simplicite.io', debug: false };
-const app = simplicite.session(cfg);
+(async () => {
+  // Explicit URL needed for a standalone deployment, set it to undefined when deploying in Simplicité
+  const cfg = { url: 'https://demo.dev.simplicite.io', debug: false };
+  const app = simplicite.session(cfg);
 
-app.info('Version: ' + simplicite.constants.MODULE_VERSION);
-app.debug(app.parameters);
+  app.info('Version: ' + simplicite.constants.MODULE_VERSION);
+  app.debug(app.parameters);
 
-app.login({ username: 'website', password: 'simplicite' }).then(user => {
+  const user = await app.login({ username: 'website', password: 'simplicite' });
   app.debug('Logged in as ' + user.login);
 
   const vueApp = createApp(Demo);
@@ -26,4 +27,4 @@ app.login({ username: 'website', password: 'simplicite' }).then(user => {
   vueApp.config.globalProperties.$simplicite = app;
 
   vueApp.mount('body');
-});
+})();
