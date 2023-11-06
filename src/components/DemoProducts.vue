@@ -22,7 +22,7 @@ export default {
     const vm = this;
     vm.products = await vm.$simplicite.getBusinessObject('DemoProduct').search(
       { demoPrdAvailable: true }, // Filters
-      { inlineDocuments: [ 'demoPrdPicture' ] }// Options
+      { inlineDocuments: [ 'demoPrdPicture' ] } // Options
     );
   }
 };
