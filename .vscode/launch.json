@@ -13,8 +13,7 @@
             "request": "launch",
             "name": "Debug in Chrome",
             "url": "http://localhost:3000",
-            "webRoot": "${workspaceFolder}/src",
-            "breakOnLoad": true
+            "webRoot": "${workspaceFolder}/src"
         }
     ]
 }
