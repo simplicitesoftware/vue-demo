@@ -9,26 +9,26 @@
     "url": "https://github.com/simplicitesoftware/vue-demo.git"
   },
   "dependencies": {
-    "core-js": "^3.33.2",
-    "simplicite": "^2.3.0",
-    "vue": "^3.3.8"
+    "core-js": "^3.35.0",
+    "simplicite": "^2.3.1",
+    "vue": "^3.4.4"
   },
   "devDependencies": {
-    "@ffflorian/jszip-cli": "^3.5.0",
+    "@ffflorian/jszip-cli": "^3.6.2",
     "@vue/cli": "^5.0.8",
     "@vue/cli-plugin-babel": "^5.0.8",
     "@vue/cli-plugin-eslint": "^5.0.8",
     "@vue/cli-service": "^5.0.8",
     "babel-eslint": "^10.1.0",
-    "eslint": "^8.53.0",
-    "eslint-plugin-vue": "^9.18.1",
-    "npm-check-updates": "^16.14.6",
+    "eslint": "^8.56.0",
+    "eslint-plugin-vue": "^9.19.2",
+    "npm-check-updates": "^16.14.12",
     "postcss-less": "^6.0.0",
     "serve": "^14.2.1",
-    "stylelint": "^15.11.0",
+    "stylelint": "^16.1.0",
     "stylelint-config-recommended-vue": "^1.5.0",
-    "stylelint-config-standard": "^34.0.0",
-    "vue-template-compiler": "^2.7.15"
+    "stylelint-config-standard": "^36.0.0",
+    "vue-template-compiler": "^2.7.16"
   },
   "scripts": {
     "start": "vue-cli-service --host=0.0.0.0 --port=3000 serve",
