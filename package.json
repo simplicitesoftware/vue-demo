@@ -1,7 +1,7 @@
 {
   "name": "vue-demo",
   "description": "Vue demo",
-  "version": "2.3.0",
+  "version": "3.0.0",
   "author": "Simplicite Software <contact@simplicitesoftware.com> (http://www.simplicitesoftware.com/)",
   "license": "Apache-2.0",
   "repository": {
@@ -10,8 +10,8 @@
   },
   "dependencies": {
     "core-js": "^3.35.0",
-    "simplicite": "^2.3.1",
-    "vue": "^3.4.4"
+    "simplicite": "^3.0.0",
+    "vue": "^3.4.5"
   },
   "devDependencies": {
     "@ffflorian/jszip-cli": "^3.6.2",
@@ -38,6 +38,9 @@
     "serve": "serve -l 3000 dist",
     "zip": "rm -f SITE.zip && cd dist && jszip-cli add --ignore *.LICENSE.txt --output ../SITE.zip .",
     "ncu": "ncu"
+  },
+  "engines": {
+    "node": ">=18"
   },
   "browserslist": [
     "> 1%",
