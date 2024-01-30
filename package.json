@@ -1,7 +1,7 @@
 {
   "name": "vue-demo",
   "description": "Vue demo",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "author": "Simplicite Software <contact@simplicitesoftware.com> (http://www.simplicitesoftware.com/)",
   "license": "Apache-2.0",
   "repository": {
@@ -9,9 +9,9 @@
     "url": "https://github.com/simplicitesoftware/vue-demo.git"
   },
   "dependencies": {
-    "core-js": "^3.35.0",
-    "simplicite": "^3.0.0",
-    "vue": "^3.4.5"
+    "core-js": "^3.35.1",
+    "simplicite": "^3.0.1",
+    "vue": "^3.4.15"
   },
   "devDependencies": {
     "@ffflorian/jszip-cli": "^3.6.2",
@@ -21,11 +21,11 @@
     "@vue/cli-service": "^5.0.8",
     "babel-eslint": "^10.1.0",
     "eslint": "^8.56.0",
-    "eslint-plugin-vue": "^9.19.2",
-    "npm-check-updates": "^16.14.12",
+    "eslint-plugin-vue": "^9.21.0",
+    "npm-check-updates": "^16.14.14",
     "postcss-less": "^6.0.0",
     "serve": "^14.2.1",
-    "stylelint": "^16.1.0",
+    "stylelint": "^16.2.0",
     "stylelint-config-recommended-vue": "^1.5.0",
     "stylelint-config-standard": "^36.0.0",
     "vue-template-compiler": "^2.7.16"
