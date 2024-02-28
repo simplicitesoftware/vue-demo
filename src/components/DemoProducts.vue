@@ -34,11 +34,11 @@ img {
 }
 h1 {
   color: #222;
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 h2 {
   color: #25911e;
-  font-size: 1.25em; font-style: italic;
+  font-size: 1.25rem; font-style: italic;
 }
 p {
   color: #777;
@@ -53,9 +53,9 @@ li {
   background-color: #FFFFFF;
   display: inline-block;
   vertical-align: top;
-  border: solid 1px #eee;
-  border-radius: 5px;
-  box-shadow: 5px 5px 10px #ddd;
+  border: solid .0625rem #eee;
+  border-radius: .5rem;
+  box-shadow: .5rem .5rem 1rem #ddd;
   margin: 10px;
   padding: 10px;
   min-width: 200px;

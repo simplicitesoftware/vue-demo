@@ -7,7 +7,8 @@
  */
 import { createApp } from 'vue';
 import Demo from './Demo.vue';
-import simplicite from 'simplicite';
+//import simplicite from 'simplicite';
+import simplicite from '../../javascript-api/dist/esm/simplicite';
 
 (async () => {
   // Explicit URL needed for a standalone deployment, set it to undefined when deploying in Simplicité
