@@ -12,7 +12,7 @@ import simplicite from '../../javascript-api/dist/esm/simplicite';
 
 (async () => {
   // Explicit URL needed for a standalone deployment, set it to undefined when deploying in Simplicité
-  const cfg = { url: 'https://demo.dev.simplicite.io', debug: false };
+  const cfg = { url: 'https://demo.dev2.simplicite.io', debug: false };
   const app = simplicite.session(cfg);
 
   app.info('Version: ' + simplicite.constants.MODULE_VERSION);
