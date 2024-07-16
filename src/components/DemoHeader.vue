@@ -19,6 +19,6 @@ export default {
 img {
   width: 20rem;
   max-width: 75%;
-  filter: invert(100%);
+  filter: invert(75%);
 }
 </style>
