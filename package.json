@@ -1,7 +1,7 @@
 {
   "name": "vue-demo",
   "description": "Vue demo",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "author": "Simplicite Software <contact@simplicitesoftware.com> (http://www.simplicitesoftware.com/)",
   "license": "Apache-2.0",
   "repository": {
@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "core-js": "^3.38.1",
-    "simplicite": "^3.0.2",
+    "simplicite": "^3.0.3",
     "vue": "^3.5.9"
   },
   "devDependencies": {
