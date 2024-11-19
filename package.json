@@ -11,18 +11,18 @@
   "dependencies": {
     "core-js": "^3.39.0",
     "simplicite": "^3.0.3",
-    "vue": "^3.5.12"
+    "vue": "^3.5.13"
   },
   "devDependencies": {
-    "@ffflorian/jszip-cli": "^3.7.3",
+    "@ffflorian/jszip-cli": "^3.8.0",
     "@vue/cli": "^5.0.8",
     "@vue/cli-plugin-babel": "^5.0.8",
     "@vue/cli-plugin-eslint": "^5.0.8",
     "@vue/cli-service": "^5.0.8",
     "babel-eslint": "^10.1.0",
     "eslint": "^8.57.0",
-    "eslint-plugin-vue": "^9.30.0",
-    "npm-check-updates": "^17.1.10",
+    "eslint-plugin-vue": "^9.31.0",
+    "npm-check-updates": "^17.1.11",
     "postcss-less": "^6.0.0",
     "serve": "^14.2.4",
     "stylelint": "^16.10.0",
