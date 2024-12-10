@@ -12,6 +12,8 @@ module.exports = {
     'semi': ['error', 'always'],
     'quotes': ['error', 'single'],
     'no-multiple-empty-lines': ['error', { 'max': 1 }],
+    'no-multi-spaces': 'error',
+    'no-trailing-spaces': ['error', { 'skipBlankLines': false } ],
     'indent': ['error', 2],
     'vue/html-indent': ['error', 2],
     'vue/max-attributes-per-line': 'off',
