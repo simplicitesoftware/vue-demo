@@ -4,11 +4,7 @@
 Vue.js&reg; demo
 ================
 
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=simplicitesoftware_vue-demo&metric=alert_status)](https://sonarcloud.io/dashboard?id=simplicitesoftware_vue-demo)
-
-This project is a **very basic** web frontend demo using
-the [Simplicit&eacute;&reg; node.js&reg; &amp; brower JavaScript API](https://www.npmjs.com/package/simplicite)
-and the [Vue.js&reg;](https://vuejs.org) framework.
+This project is a **very basic** web frontend demo written in [Vue.js&reg;](https://vuejs.org).
 
 Install
 -------
@@ -24,8 +20,8 @@ Check syntax and rules
 npm run lint
 ```
 
-Run in developement mode
-------------------------
+Run in development mode
+-----------------------
 
 ```bash
 npm run start
