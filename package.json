@@ -9,32 +9,34 @@
     "url": "https://github.com/simplicitesoftware/vue-demo.git"
   },
   "dependencies": {
-    "core-js": "^3.39.0",
-    "simplicite": "^3.0.3",
-    "vue": "^3.5.13"
+    "core-js": "3.39.0",
+    "simplicite": "3.0.3",
+    "vue": "3.5.13"
   },
   "devDependencies": {
-    "@ffflorian/jszip-cli": "^3.8.2",
-    "@vue/cli": "^5.0.8",
-    "@vue/cli-plugin-babel": "^5.0.8",
-    "@vue/cli-plugin-eslint": "^5.0.8",
-    "@vue/cli-service": "^5.0.8",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^8.57.0",
-    "eslint-plugin-vue": "^9.32.0",
-    "npm-check-updates": "^17.1.11",
-    "postcss-less": "^6.0.0",
-    "serve": "^14.2.4",
-    "stylelint": "^16.11.0",
-    "stylelint-config-recommended-vue": "^1.5.0",
-    "stylelint-config-standard": "^36.0.1",
-    "vue-template-compiler": "^2.7.16"
+    "@ffflorian/jszip-cli": "3.8.2",
+    "@vue/cli": "5.0.8",
+    "@vue/cli-plugin-babel": "5.0.8",
+    "@vue/cli-plugin-eslint": "5.0.8",
+    "@vue/cli-service": "5.0.8",
+    "babel-eslint": "10.1.0",
+    "eslint": "9.16.0",
+    "eslint-plugin-vue": "9.32.0",
+    "globals": "15.13.0",
+    "npm-check-updates": "17.1.11",
+    "postcss-less": "6.0.0",
+    "serve": "14.2.4",
+    "stylelint": "16.11.0",
+    "stylelint-config-recommended-vue": "1.5.0",
+    "stylelint-config-standard": "36.0.1",
+    "vue-template-compiler": "2.7.16"
   },
   "scripts": {
     "start": "vue-cli-service --host=0.0.0.0 --port=3000 serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
+    "eslint": "eslint src/**.js src/**.vue",
     "stylelint": "stylelint src/**/*.vue",
+    "lint": "npm run eslint && npm run stylelint",
     "serve": "serve -l 3000 dist",
     "zip": "rm -f SITE.zip && cd dist && jszip-cli add --ignore *.LICENSE.txt --output ../SITE.zip .",
     "ncu": "ncu"
