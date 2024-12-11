@@ -1,59 +1,35 @@
-![Simplicit&eacute; Software](https://platform.simplicite.io/logos/logo250-grey.png)
-* * *
+# test-vue
 
-Vue.js&reg; demo
-================
+This template should help get you started developing with Vue 3 in Vite.
 
-This project is a **very basic** web frontend demo written in [Vue.js&reg;](https://vuejs.org).
+## Recommended IDE Setup
 
-Install
--------
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
 
-```bash
+## Customize configuration
+
+See [Vite Configuration Reference](https://vite.dev/config/).
+
+## Project Setup
+
+```sh
 npm install
 ```
 
-Check syntax and rules
-----------------------
+### Compile and Hot-Reload for Development
 
-```bash
-npm run lint
+```sh
+npm run dev
 ```
 
-Run in development mode
------------------------
+### Compile and Minify for Production
 
-```bash
-npm run start
-```
-
-Build for production
---------------------
-
-```bash
+```sh
 npm run build
 ```
 
-Run in production mode
-----------------------
+### Lint with [ESLint](https://eslint.org/)
 
-```bash
-npm run serve
+```sh
+npm run lint
 ```
-
-License
-=======
-
-Copyright 2018-2024 Simplicit&eacute; Software
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at:
-
-[](http://www.apache.org/licenses/LICENSE-2.0)
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.

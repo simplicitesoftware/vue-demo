@@ -8,45 +8,32 @@
     "type": "git",
     "url": "https://github.com/simplicitesoftware/vue-demo.git"
   },
+  "type": "module",
   "dependencies": {
-    "core-js": "3.39.0",
-    "simplicite": "3.0.3",
-    "vue": "3.5.13"
+    "vue": "3.5.13",
+    "simplicite": "3.0.3"
   },
   "devDependencies": {
+    "@eslint/js": "9.16.0",
     "@ffflorian/jszip-cli": "3.8.2",
-    "@vue/cli": "5.0.8",
-    "@vue/cli-plugin-babel": "5.0.8",
-    "@vue/cli-plugin-eslint": "5.0.8",
-    "@vue/cli-service": "5.0.8",
-    "babel-eslint": "10.1.0",
+    "@vitejs/plugin-vue": "5.2.1",
     "eslint": "9.16.0",
     "eslint-plugin-vue": "9.32.0",
-    "globals": "15.13.0",
     "npm-check-updates": "17.1.11",
-    "postcss-less": "6.0.0",
-    "serve": "14.2.4",
+    "vite": "6.0.3",
     "stylelint": "16.11.0",
     "stylelint-config-recommended-vue": "1.5.0",
     "stylelint-config-standard": "36.0.1",
-    "vue-template-compiler": "2.7.16"
+    "vite-plugin-vue-devtools": "7.6.8"
   },
   "scripts": {
-    "eslint": "eslint src/**/*.js src/**/*.vue",
+    "ncu": "ncu",
+    "eslint": "eslint src",
     "stylelint": "stylelint src/**/*.vue",
     "lint": "npm run eslint && npm run stylelint",
-    "start": "vue-cli-service --host=0.0.0.0 --port=3000 serve",
-    "build": "vue-cli-service build",
-    "serve": "serve -l 3000 dist",
-    "zip": "rm -f SITE.zip && cd dist && jszip-cli add --ignore *.LICENSE.txt --output ../SITE.zip .",
-    "ncu": "ncu"
-  },
-  "engines": {
-    "node": ">=18"
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not dead"
-  ]
+    "start": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "zip": "rm -f SITE.zip && cd dist && jszip-cli add --ignore *.LICENSE.txt --output ../SITE.zip ."
+  }
 }

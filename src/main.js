@@ -7,19 +7,19 @@
  */
 import { createApp } from 'vue';
 import Demo from './Demo.vue';
-//import simplicite from 'simplicite';
-import simplicite from '../../javascript-api/dist/esm/simplicite';
+import simplicite from 'simplicite';
+//import simplicite from '../../javascript-api/dist/esm/simplicite';
 
 (async () => {
   // Explicit URL needed for a standalone deployment, set it to undefined when deploying in Simplicité
   const cfg = { url: 'https://demo.dev2.simplicite.io', debug: false };
   const app = simplicite.session(cfg);
 
-  app.info('Version: ' + simplicite.constants.MODULE_VERSION);
+  app.info(`Version: ${simplicite.constants.MODULE_VERSION}`);
   app.debug(app.parameters);
 
   const user = await app.login({ username: 'website', password: 'simplicite' });
-  app.debug('Logged in as ' + user.login);
+  app.debug(`Logged in as ${user.login}`);
 
   const vueApp = createApp(Demo);
 
