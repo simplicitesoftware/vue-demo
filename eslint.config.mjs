@@ -15,9 +15,9 @@ export default [ ...eslintPluginVue.configs["flat/recommended"], {
         "no-console": process.env.NODE_ENV === "production" ? "error" : "off",
         "no-debugger": process.env.NODE_ENV === "production" ? "error" : "off",
         "vue/html-indent": ["error", 2],
-        "vue/max-attributes-per-line": "error",
+        "vue/max-attributes-per-line": ["error", { singleline: 10, multiline: 5 }],
         "vue/first-attribute-linebreak": "error",
         "vue/html-closing-bracket-spacing": ["error", { startTag: "never", endTag: "never", selfClosingTag: "never" }],
-        "vue/singleline-html-element-content-newline": "error"
+        "vue/singleline-html-element-content-newline": "off"
     }
 }];
