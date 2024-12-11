@@ -26,13 +26,16 @@
     "stylelint-config-standard": "36.0.1",
     "vite-plugin-vue-devtools": "7.6.8"
   },
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
     "ncu": "ncu",
     "eslint": "eslint src",
     "stylelint": "stylelint src/**/*.vue",
     "lint": "npm run eslint && npm run stylelint",
     "start": "vite",
-    "build": "vite build",
+    "build": "npm run lint && vite build",
     "serve": "vite preview",
     "zip": "rm -f SITE.zip && cd dist && jszip-cli add --ignore *.LICENSE.txt --output ../SITE.zip ."
   }
