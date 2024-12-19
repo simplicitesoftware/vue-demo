@@ -1,10 +1,16 @@
 import js from '@eslint/js';
+import globals from 'globals';
 import vuePlugin from 'eslint-plugin-vue';
 
 export default [
   js.configs.recommended,
   ...vuePlugin.configs['flat/essential'],
   {
+    languageOptions: {
+      globals: {
+        ...globals.browser
+      }
+    },
     rules: {
       'indent': ['error', 2],
       'quotes': ['error', 'single'],
