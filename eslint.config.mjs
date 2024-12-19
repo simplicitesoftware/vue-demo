@@ -7,9 +7,7 @@ export default [
   ...vuePlugin.configs['flat/essential'],
   {
     languageOptions: {
-      globals: {
-        ...globals.browser
-      }
+      globals: { ...globals.browser }
     },
     rules: {
       'indent': ['error', 2],
