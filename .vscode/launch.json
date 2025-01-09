@@ -13,7 +13,10 @@
             "request": "launch",
             "name": "Debug in Chrome",
             "url": "http://localhost:3000",
-            "webRoot": "${workspaceFolder}/src"
+            "webRoot": "${workspaceFolder}/src",
+            "sourceMapPathOverrides": { "webpack:///./src/*": "${webRoot}/*" },
+            "runtimeArgs": [ "--remote-debugging-port=9222" ],
+            "sourceMaps": true
         }
     ]
 }
