@@ -1,6 +1,6 @@
 <template>
   <footer>
-    &copy; Simplicit&eacute; Software (version {{ this.$simplicite.constants.MODULE_VERSION }}),
+    &copy; Simplicit&eacute; Software (version {{ this.$simplicite.getModuleVersion() }}),
     powered by <a href="https://vuejs.org" rel="noopener noreferrer" target="_blank">Vue.js</a>
   </footer>
 </template>
