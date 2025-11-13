@@ -10,18 +10,18 @@
   },
   "type": "module",
   "dependencies": {
-    "vue": "3.5.23",
+    "vue": "3.5.24",
     "simplicite": "3.1.4"
   },
   "devDependencies": {
     "@eslint/js": "9.39.1",
-    "@ffflorian/jszip-cli": "3.8.11",
+    "@ffflorian/jszip-cli": "3.10.1",
     "@vitejs/plugin-vue": "6.0.1",
     "eslint": "9.39.1",
     "eslint-plugin-vue": "9.33.0",
     "globals": "16.5.0",
     "npm-check-updates": "19.1.2",
-    "vite": "7.2.1",
+    "vite": "7.2.2",
     "stylelint": "16.25.0",
     "stylelint-config-recommended-vue": "1.6.1",
     "stylelint-config-standard": "39.0.1",
