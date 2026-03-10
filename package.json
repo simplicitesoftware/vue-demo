@@ -1,7 +1,7 @@
 {
   "name": "vue-demo",
   "description": "Vue demo",
-  "version": "3.1.4",
+  "version": "3.1.5",
   "author": "Simplicite Software <contact@simplicitesoftware.com> (http://www.simplicitesoftware.com/)",
   "license": "Apache-2.0",
   "repository": {
@@ -10,8 +10,8 @@
   },
   "type": "module",
   "dependencies": {
-    "vue": "3.5.29",
-    "simplicite": "3.1.4"
+    "vue": "3.5.30",
+    "simplicite": "3.1.5"
   },
   "devDependencies": {
     "@eslint/js": "9.39.3",
@@ -19,13 +19,13 @@
     "@vitejs/plugin-vue": "6.0.4",
     "eslint": "9.39.3",
     "eslint-plugin-vue": "9.33.0",
-    "globals": "17.3.0",
-    "npm-check-updates": "19.5.0",
+    "globals": "17.4.0",
+    "npm-check-updates": "19.6.3",
     "vite": "7.3.1",
     "stylelint": "17.4.0",
     "stylelint-config-recommended-vue": "1.6.1",
     "stylelint-config-standard": "40.0.0",
-    "vite-plugin-vue-devtools": "8.0.6"
+    "vite-plugin-vue-devtools": "8.0.7"
   },
   "engines": {
     "node": ">=18"
