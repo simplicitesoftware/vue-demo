@@ -16,15 +16,15 @@
   "devDependencies": {
     "@eslint/js": "10.0.1",
     "@ffflorian/jszip-cli": "3.16.1",
-    "@vitejs/plugin-vue": "6.0.5",
+    "@vitejs/plugin-vue": "6.0.6",
     "eslint": "10.2.0",
     "eslint-plugin-vue": "10.8.0",
     "vue-eslint-parser": "10.4.0",
-    "globals": "17.4.0",
+    "globals": "17.5.0",
     "npm-check-updates": "20.0.1",
     "vite": "8.0.8",
     "vite-plugin-eslint2": "5.1.0",
-    "stylelint": "17.6.0",
+    "stylelint": "17.7.0",
     "stylelint-config-recommended-vue": "1.6.1",
     "stylelint-config-standard": "40.0.0",
     "vite-plugin-vue-devtools": "8.1.1"
